@@ -7,4 +7,6 @@
   };
 
   services.journald.extraConfig = "Storage=volatile";
+
+  services.udisks2.enable = true;
 }

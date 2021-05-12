@@ -70,9 +70,5 @@
 
   system.stateVersion = "21.05";
 
-  hardware.cpu.intel.updateMicrocode = true;
-
   environment.shells = [ pkgs.zsh ];
-
-  services.udisks2.enable = true;
 }

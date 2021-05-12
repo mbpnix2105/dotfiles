@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  programs.adb.enable = true;
+
+  programs.neovim.defaultEditor = true;
+
   environment.systemPackages = with pkgs; [
     acpi
     bleachbit

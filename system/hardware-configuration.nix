@@ -30,6 +30,8 @@
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "ondemand";
 
+  hardware.cpu.intel.updateMicrocode = true;
+
   zramSwap = {
     enable = true;
     algorithm = "zstd";
