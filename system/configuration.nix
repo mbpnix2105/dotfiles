@@ -13,7 +13,7 @@
       ./modules/security.nix
       ./modules/services.nix
       ./modules/sound.nix
-      # ./modules/virtualisation.nix
+      ./modules/virtualisation.nix
       ./modules/xserver.nix
       ./modules/zsh.nix
     ];
@@ -43,7 +43,7 @@
 
   users.users.mbpnix = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "docker" ];
     uid = 1000;
     description = "MBPNIX";
     group = "mbpnix";
