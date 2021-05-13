@@ -26,4 +26,9 @@
     manpages.enable = false;
     json.enable = false;
   };
+
+  /* Fix this! */
+  # home.sessionVariable = {
+  #   EDITOR = "vim";
+  # };
 }

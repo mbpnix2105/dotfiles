@@ -13,7 +13,7 @@
       ./modules/security.nix
       ./modules/services.nix
       ./modules/sound.nix
-#     ./modules/virtualisation.nix
+      # ./modules/virtualisation.nix
       ./modules/xserver.nix
       ./modules/zsh.nix
     ];
@@ -70,5 +70,11 @@
 
   system.stateVersion = "21.05";
 
-  environment.shells = [ pkgs.zsh ];
+  environment = {
+    shells = [ pkgs.zsh ];
+    variables = {
+      EDITOR = "vim";
+      VISUAL = "vim";
+    };  
+  };
 }

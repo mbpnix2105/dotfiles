@@ -5,6 +5,11 @@
     enable = true;
     vimAlias = true;
     viAlias = true;
+    plugins = [
+      pkgs.vimPlugins.dracula-vim
+      pkgs.vimPlugins.gruvbox
+      pkgs.vimPlugins.vim-nix
+    ];
     extraConfig = ''
       colorscheme gruvbox
       highlight ColorColumn ctermbg=0 guibg=lightgrey
@@ -23,10 +28,5 @@
       set tabstop=2 softtabstop=2
       syntax on
     '';
-    plugins = [
-      pkgs.vimPlugins.dracula-vim
-      pkgs.vimPlugins.gruvbox
-      pkgs.vimPlugins.vim-nix
-    ];
   };
 }
