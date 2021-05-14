@@ -1,11 +1,16 @@
 {config, pkgs, ...}:
 
 {
-  virtualisation.docker = {
+  virtualisation.podman = {
     enable = true;
-    enableOnBoot = true;
-    storageDriver = "overlay2";
+    dockerCompat = true;
   };
+
+  # virtualisation.docker = {
+  #   enable = true;
+  #   enableOnBoot = true;
+  #   storageDriver = "overlay2";
+  # };
 
 /* machinectl pull-tar --verify=no https://nspawn.org/storage/archlinux/archlinux/tar/image.tar.xz archlinux */
 
